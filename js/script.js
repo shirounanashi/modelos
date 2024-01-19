@@ -27,7 +27,7 @@ window.onload = function () {
                   if (file.rfilename !== '.gitattributes') {
                       const row = fileList.insertRow();
                       var nome = file.rfilename;
-                      var nomeCortado = nome.slice(0, -4);
+                      var nomeCortado = nome.slice(0, -4).replace(/-/g, ' ');
                       row.innerHTML = `
                           <td>${nomeCortado}</td>
                           <td>${formatSize(file.rfilesize)}</td>
