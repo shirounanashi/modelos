@@ -8,6 +8,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
@@ -59,15 +62,18 @@ main div{
     background-color: #f2f2f2;
 }
 
-#fileList tr td:last-child a{
+#fileList tr td:last-child a, .back-button{
+    font-family: 'Montserrat', sans-serif;
     background: #021002;
     color: #FFFFFF;
     text-decoration: none;
     padding: 3px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 footer{
+    margin-top: auto;
     background: #021002;
     color: #FFFFFF;
     width: 100vw;
@@ -75,6 +81,4 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    bottom: 0;
 }
